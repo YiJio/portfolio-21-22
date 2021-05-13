@@ -1,3 +1,4 @@
+/* showcase functions */
 var header = document.getElementById("images");
 var img = header.getElementsByClassName("img");
 var imgmain = document.getElementById("imgmain");
@@ -18,6 +19,6 @@ for(var i = 0; i < img.length; i++) {
 		var hyphen = src.lastIndexOf("-") + 1;
 		var num = src.substr(hyphen, dot - hyphen) - 1;
 		textmain.innerHTML = text[num];
-		imgmain.src = "../images/" + src;
+		imgmain.src = "../images/full/" + src;
 	});
 }
