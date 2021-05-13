@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Project: Boredom</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+	<div class="intro">
+		<div class="wrapper">
+			<div class="home">
+				<a href="../index.html">Yi Jiang</a>
+			</div>
+			<div class="links">
+				<a href="../about.html">About</a>
+				<a href="../work.html">Work</a>
+			</div>
+		</div>
+	</div>
+	<div class="project">
+		<div class="top">
+			<div class="img"></div>
+			<div class="about">
+				<b>Boredom</b>
+				<em>Client: Personal project (in progress)</em>
+				<em>Type: Website, 2017-present</em>
+				<em>Work: Illustration, UI design, fullstack design & development</em>
+				<p>Tried to make a forum with basic PHP and MySQL database integration. Boredom is real.</p>
+				<p style="color:#888;">*Website: <u><a target="blank" href="http://boredom.byethost9.com/">Link</a></u></p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="box">
+				<div class="message">The below are screenshots of the project. Everything <u>except</u> the forum banner and avatar images used in the project do not belong to me, they are used as placeholders for now. If subject to copyright, please contact me and I will gladly take it down.</div>
+			</div>
+			<table class="showcase" cellpadding="0" cellspacing="5">
+				<tr>
+					<td>
+						<div class="images" id="images">
+							<img class="img active" src="../images/thumb/boredom-1.png"/>
+							<img class="img" src="../images/thumb/boredom-2.png"/>
+							<img class="img" src="../images/thumb/boredom-3.png"/>
+							<img class="img" src="../images/thumb/boredom-4.png"/>
+							<img class="img" src="../images/thumb/boredom-5.png"/>
+							<img class="img" src="../images/thumb/boredom-6.png"/>
+							<img class="img" src="../images/thumb/boredom-7.png"/>
+							<img class="img" src="../images/thumb/boredom-8.png"/>
+							<img class="img" src="../images/thumb/boredom-9.png"/>
+						</div>
+					</td>
+					<td class="maincase">
+						<div class="imgmain">
+							<img src="../images/full/boredom-1.png" id="imgmain"/>
+						</div>
+						<div class="textmain" id="textmain">
+							<b>Header and register/login form</b>
+							<p>The header's left shows the links the user can navigate across the website. When the user hovers over a link, the link will be highlighted in a gray background. The website's 'index' and 'forum' links exist, currently.</p>
+							<p>The header's right shows the 'register' and 'login' links. Hovering the link will show a white text on teal background. When the user is logged in, the two links are replaced with 'account' and 'logout'.</p>
+							<p>When the user is on the register page, they can fill out the username, password, and email fields. Clicking on the button will add the user to the database.</p>
+							<p>The login page above currently shows an error message saying the email entered does not exist in the website. The button is black when the user hovers over it.</p>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="footer">
+		© All rights reserved.
+	</div>
+	<script>
+		var text = [
+			"<b>Header and register/login form</b><p>The header's left shows the links the user can navigate across the website. When the user hovers over a link, the link will be highlighted in a gray background. The website's 'index' and 'forum' links exist, currently.</p><p>The header's right shows the 'register' and 'login' links. Hovering the link will show a white text on teal background. When the user is logged in, the two links are replaced with 'account' and 'logout'.</p><p>When the user is on the register page, they can fill out the username, password, and email fields. Clicking on the button will add the user to the database.</p><p>The login page above currently shows an error message saying the email entered does not exist in the website. The button is black when the user hovers over it.</p>",
+			"<b>Index page</b><p>As the name of the website suggests, I implemented random things that can be tied to boredom. I picked some quotes that had something to do with boredom, and also came up with some simple activities to get out of boredom (basic frontend JS - seeable code ._.). Every time a user loads the index page, three random quotes and activities will be displayed.</p>",
+			"<b>Account page</b><p>The top part (in the gray box) shows the left side of the account page. The title of the website, the profile image, the username and email are shown. Forum points and the number of topics created are also counted. The user can also go to the forums by clicking on the button.</p><p>The bottom part shows the right side of the page. A box for messages is located at the top (there is yet functionality for this). The user can also update their account information (except for the member ID). I did not add a functionality to edit the profile image.</p>",
+			"<b>Forum page (main)</b><p>At the top, the user can go back to the index page of the website. They can post a topic (only if logged in) or explore the forum boards. Each board has an image, name, description, number of topics, and number of posts. At the right, the user can view the top users in terms of points contributed in the forums.</p>",
+			"<b>Forum page (board)</b><p>For each board, all the topics will be shown in a list fashion. Each topic is displayed with the title and the profile image of the user who started the topic. Details such as the username and the date posted is also shown. The user can see how many replies are left for that particular topic. The user can also post a topic (only if logged in).</p><p>On the right, the user can choose to go to another board by clicking on the names.</p>",
+			"<b>Forum page (topic)</b><p>When viewing a topic on the forum, the title of the topic is placed at the top of the page. The user who started the topic is called the floor master. The content, according to the image above, is 'sdf'. Each reply is shown under the floor master. Users can reply to the topic if they are logged in.</p><p>Currently, comments for any thread post is not implemented. However, it will be placed on the same floor of the thread, and the users information will be made small.</p>",
+			"<b>Forum page (post reply)</b><p>The page has a custom-made text editor that uses bbcode tags. The user must click on the 'store and show text' button to preview what their text shows. If they do not click on the button and click 'post reply', their post will be blank... Currently, I did not add functionality for the user to be able to edit their threads (it is definitely possible).</p>",
+			"<b>Forum page (post topic)</b><p>Posting a topic will just have a board selection dropdown and an input field for the topic name. Other than that, the rest will be the same as posting a reply.</p><p>I also included some UI icons that I made that switches the color mode of the website. The default is white. When the user clicks on the button, the page will turn to night mode, where the button will change to the black icon. However, when the user goes to another page on the forum, it will go back to being the default mode...</p>",
+			"<b>Survey page</b><p>Currently, this page is not implemented. I started on the code but scrapped it because it was inefficient. The purpose of this page is to allow a user to be able to create a survey (quiz, test, personality test, any kinds) and add questions (with choices/answers). Other users can explore the page and look for surveys they want to take. If the user has already taken the survey, their results will show up instead.</p>"
+		];
+	</script>
+	<script src="../project.js"></script>
+</body>
+</html>

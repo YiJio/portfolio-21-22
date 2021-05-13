@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Project: ePCR System</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+	<div class="intro">
+		<div class="wrapper">
+			<div class="home">
+				<a href="../index.html">Yi Jiang</a>
+			</div>
+			<div class="links">
+				<a href="../about.html">About</a>
+				<a href="../work.html">Work</a>
+			</div>
+		</div>
+	</div>
+	<div class="project">
+		<div class="top">
+			<div class="img"></div>
+			<div class="about">
+				<b>ePCR System</b>
+				<em>Client: Rescate Ambulance Service</em>
+				<em>Type: Website, 2020-2021</em>
+				<em>Work: UI design, fullstack design & development</em>
+				<p>Worked with a team for university senior projects to design a website app to store patient records for the Rescate Ambulance Service. Was in charge of developing the chart forms.</p>
+				<p style="color:#888;">*GitHub repository: <u><a target="blank" href="https://github.com/kanukam/ePCR-System">Link</a></u></p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="box">
+				<div class="message">The below are screenshots showing the portions that I have contributed to the project. The project can be toggled in either Spanish or English, but I am only showing the English version (values are stored in Spanish, however).</div>
+			</div>
+			<table class="showcase" cellpadding="0" cellspacing="5">
+				<tr>
+					<td>
+						<div class="images" id="images">
+							<img class="img active" src="../images/thumb/epcr-1.png"/>
+							<img class="img" src="../images/thumb/epcr-2.png"/>
+							<img class="img" src="../images/thumb/epcr-3.png"/>
+							<img class="img" src="../images/thumb/epcr-4.png"/>
+							<img class="img" src="../images/thumb/epcr-5.png"/>
+							<img class="img" src="../images/thumb/epcr-6.png"/>
+							<img class="img" src="../images/thumb/epcr-7.png"/>
+							<img class="img" src="../images/thumb/epcr-8.png"/>
+							<img class="img" src="../images/thumb/epcr-9.png"/>
+							<img class="img" src="../images/thumb/epcr-10.png"/>
+						</div>
+					</td>
+					<td class="maincase">
+						<div class="imgmain">
+							<img src="../images/full/epcr-1.png" id="imgmain"/>
+						</div>
+						<div class="textmain" id="textmain">
+							<b>Create chart: top half of first page (call information)</b>
+							<p>Section headings have a background to help separate out the information associated with it. Each input field label is placed at the left of the inputs. Dropdowns are used for one selections while checkboxes are used for multiple selections. Red asterisks are used to indicate required fields.</p>
+							<p>'Mass Casualty Incident' and 'Vechicle Accident' fields can be checked to trigger for more inputs related to it.</p>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="footer">
+		© All rights reserved.
+	</div>
+	<script>
+		var text = [
+			"<b>Create chart: top half of first page (call information)</b><p>Section headings have a background to help separate out the information associated with it. Each input field label is placed at the left of the inputs. Dropdowns are used for one selections while checkboxes are used for multiple selections. Red asterisks are used to indicate required fields.</p><p>'Mass Casualty Incident' and 'Vechicle Accident' fields can be checked to trigger for more inputs related to it.</p>",
+			"<b>Create chart: top half of second page (patient information)</b><p>'Previous patient search' button triggers a popup. The design of the button makes the user know that it is indeed a button. 'Age' is calculated based on any change from the 'date of birth' field.</p>",
+			"<b>Create chart: patient search popup</b><p>Triggered from the 'previous patient search' button. Uses the React Modal component. Users can search for existing patients in the system by the name, which the page will filter based on the letter(s). They can search according to <em>&#8249;last name&#8250; &#8249;first name&#8250;</em> or <em>&#8249;first name&#8250; &#8249;last name&#8250;</em>.</p><p>The 'select' button retrieves the information of that particular patient, closes the popup, and autopopulates the 'first name', 'last name', and 'date of birth' fields from the patient information page.</p>",
+			"<b>Create chart: top half of third page (physical assessment)</b><p>The assessments section asks for the user to select patient injuries on the body. The user can click on each part of the body (selected will show a gray background and blue text), and the right portion will update the checkboxes related to it. For the arms and legs, the user can select the 'left' or the 'right'.</p>",
+			"<b>Create chart: bottom half of third page (physical assessment)</b><p>If the user checks 'vital signs', they must fill out the required field for the 'time'. The user can click on the numbered boxes for the pain, which is colored according to the pain scale.</p><p>The 'add vitals' button will add the vital signs to the display table, which is located under the section name. Currently, there is none. When there is at least one vital sign added, the 'action' column allows for the user to remove the vital sign if necessary.</p>",
+			"<b>Create chart: top half of fourth page (interventions)</b><p>The user can record a procedure performed on the patient by clicking on the 'add a procedure' button, which triggers a popup. The same thing happens with medications. The user can click on the 'remove' button and remove the particular procedure/medication from the display table. The information will only be added in Spanish, however.</p><p>Under 'intake output', the user can fill out the fluid pre transport and transport values, and the system will calculate the total based on the two values.</p>",
+			"<b>Create chart: add procedure popup</b><p>The user can select the type of procedure performed (image shows selected 'cardiac arrest' procedure). Based on the procedure selected, fields will be different. For example, 'start time CPR', 'stop time CPR', 'outcome', and 'CPR done by' only shows up for 'cardiac arrest' procedure.</p><p>The user can click on 'add', which takes the values to the display table on the interventions page and closes the popup. Clicking on 'cancel' will simply reset all values and close the popup.</p><p>Note: The 'add a medication' button will also trigger a popup similar to this one, but will ask specifically for medication name, dosage, units, results, etc.</p>",
+			"<b>Create chart: top half of fifth page (confirm)</b><p>The user is able to quickly view all the fields entered previously. The user can still go back to the previous sections through the bottom navigation. All results are saved in Spanish.</p>",
+			"<b>Create chart: bottom navigation</b><p>Icons created with Adobe Photoshop, placed into the circle containers styled with CSS. Icons are clickable and will change to a darker color on hover and on active. User can navigate between pages from these icons.</p>",
+			"<b>View chart: choose new file (attachments)</b><p>When the user clicks on the 'choose new file' button (uses the input file tag), the user can select a file of any type. The system checks if the file selected is of image type (extensions: jpg/jpeg/png/etc.), which will preview the image under the button, with the name of the file as well. If the file was not an image, the system will preview an image that says 'no preview available'.</p>"
+		];
+	</script>
+	<script src="../project.js"></script>
+</body>
+</html>
