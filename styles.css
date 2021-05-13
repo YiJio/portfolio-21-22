@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+:root {
+	--dark:#0f1217;
+	/*--dark:#49403e;
+	--dark:#342c37;
+	--dark:#504a58;*/
+	--light:#eee;
+	/*--light:#fbf7f4;
+	--light:#faf5f3;
+	--light:#f9fafb;*/
+	--link:#3bb5da;
+	/*--link:#ba8862;
+	--link:#b47a5a;
+	--link:#8d9eb8;*/
+}
+
+body { border:0; margin:0; padding:0; outline:0; font-size:15px; font-family:'Open Sans', 'Montserrat', 'Roboto', 'Microsoft Yahei', sans-serif; /*background:#191e26;*/ background:#fff; color:#000; }
+a { /*color:#6691ab;*/ color:#000; text-decoration:none; transition:0.2s color ease-in-out; }
+a:hover { color:var(--link); }
+
+.heading { margin:1rem 0; text-align:center; text-transform:uppercase; font-size:18px; letter-spacing:2px; }
+
+.intro { background:var(--dark); text-transform:uppercase; }
+.intro .wrapper { display:flex; align-items:center; justify-content:space-between; margin:0 auto; padding:1.5rem 0; width:60%; }
+.intro .wrapper a { color:var(--link); }
+.intro .wrapper a:hover { color:#fff; }
+.intro .wrapper .home a { font-size:15px; }
+.intro .wrapper .links a { display:inline-block; margin:0 1.5rem; font-size:12px; }
+
+.resume { margin:5rem auto; width:50%; }
+.resume a { color:var(--link); }
+.resume h1 { margin:0; text-transform:uppercase; color:var(--link); }
+.resume .about, .resume .section { display:flex; align-items:flex-start; }
+.resume .about .profile { width:30%; text-align:center; }
+.resume .about .profile img	{ max-width:100%; max-height:100%; }
+.resume .about .info { padding:20px; width:70%; background:var(--light); }
+.resume .about .info img { width:20px; height:20px; }
+.resume .section .title { width:30%; font-weight:bold; color:var(--link); }
+.resume .section .info { width:70%; }
+.resume .section .info span { display:inline-block; margin:0 1.5rem 1rem 0; }
+
+.work { margin:5rem auto; width:60%; }
+.work .grid { display:grid; grid-template-columns:auto auto auto auto; grid-gap:1.5rem; padding:1rem; }
+.work .grid .item { width:257px; /*background:#212833; border:1px solid #14181d;*/ background:#f9f9f9; border:1px solid var(--light); text-align:center; }
+.work .grid .item img { max-width:100%; max-height:100%; }
+.work .grid .item b, .work .grid .item em { display:block; margin-bottom:1em; font-style:normal; }
+.work .grid .item p { color:var(--link); }
+.work .grid .item span { display:block; padding:10px; text-align:left; font-size:13px; }
+
+.project { margin:5rem auto; width:60%; }
+.project .top { display:flex; }
+.project .top .img { width:25%; }
+.project .top .img img { max-width:100%; max-height:100%; }
+.project .top .about { width:75%; padding:20px; background:var(--light); text-transform:none; }
+.project .top .about b, .project .top .about em { display:block; margin-bottom:1em; font-style:normal; }
+.project .content .box { margin:1rem 0; padding:20px; background:var(--light); }
+.project .content .box .message { text-align:center; }
+
+table.showcase { padding:10px; width:100%; }
+table.showcase td { vertical-align:top; }
+.images { width:130px; height:590px; text-align:center; overflow:auto; }
+.images::-webkit-scrollbar { width:10px; height:10px; padding:3px 3px 3px 15px }
+.images::-webkit-scrollbar-track { background:var(--light); }
+.images::-webkit-scrollbar-thumb { background:var(--link); border:1px solid var(--link); border-top-width:7px; border-bottom-width:7px; }
+.images .img { display:block; margin-bottom:5px; width:110px; height:110px; border:2px solid var(--light); transition:150ms all ease-in-out; cursor:pointer; }
+.images .img:hover, .images .img.active { border-color:var(--link); }
+.images .img:last-child { margin:0; }
+.maincase { border:5px solid var(--light); background:var(--light); }
+.maincase .imgmain { padding:10px; min-height:200px; background:#fff; }
+.maincase .imgmain img { display:block; margin:0 auto; max-width:85%; }
+.maincase .textmain { padding:5px; font-size:smaller; color:#555; }
+
+.footer { padding:1rem; text-align:center; text-transform:uppercase; font-size:12px; color:#aaa; }
