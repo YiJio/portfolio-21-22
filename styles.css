@@ -30,7 +30,7 @@ a:hover { color:var(--link); }
 .intro .wrapper .links a { display:inline-block; margin:0 1.5rem; font-size:12px; }
 
 .resume { margin:5rem auto; width:50%; }
-.resume a { color:var(--link); }
+.resume a { display:inline-block; margin-right:5px; padding:5px; width:18px; height:18px; border-radius:50%; background:#fff; color:var(--link); text-align:center; font-size:16px; }
 .resume h1 { margin:0; text-transform:uppercase; color:var(--link); }
 .resume .about, .resume .section { display:flex; align-items:flex-start; }
 .resume .about .profile { width:30%; text-align:center; }
