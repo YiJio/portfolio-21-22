@@ -1,11 +1,10 @@
 <html>
 <head>
-	<title>Portfolio</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="content-type" content="text/html" />
 	<link rel="stylesheet" href="styles.css"/>
-	<style>
-		
-	</style>
+	<title>Portfolio - Work</title>
 </head>
 <body>
 	<div class="intro">
@@ -13,9 +12,16 @@
 			<div class="home">
 				<a href="index.html">Yi Jiang</a>
 			</div>
-			<div class="links">
-				<a href="about.html">About</a>
-				<a href="work.html">Work</a>
+			<div class="menu">
+				<ul class="nav">
+					<li><a href="about.html">About</a></li>
+					<li><a class="active" href="work.html">Work</a></li>
+				</ul>
+			</div>
+			<div class="menubutton">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
 			</div>
 		</div>
 	</div>
@@ -88,11 +94,11 @@
 			</div>
 			<div class="item">
 				<span>
-					<b>FooDan</b>
+					<a href="project/foodan.html"><b>FooDan</b></a>
 					<em>Client: Restaurants and regular users</em>
 					<em>Type: Website, 2021</em>
 					<em>Work: UI design, fullstack design & development</em>
-					<p>Worked with a partner for a university HCI project to design a restaurant menu food ordering web application. Was in charge of the UI design and the backend.</p>
+					<p>Worked with a partner for a university HCI project to design a food ordering restaurant menu (FORM) web application. Was in charge of the UI design and the backend.</p>
 				</span>
 			</div>
 			<div class="item">
@@ -145,5 +151,6 @@
 	<div class="footer">
 		© All rights reserved.
 	</div>
+	<script src="main.js"></script>
 </body>
 </html>
