@@ -1,8 +1,10 @@
 <html>
 <head>
-	<title>Project: LotC常购</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="content-type" content="text/html" />
 	<link rel="stylesheet" href="../styles.css"/>
+	<title>Project: LotC常购</title>
 </head>
 <body>
 	<div class="intro">
@@ -10,9 +12,16 @@
 			<div class="home">
 				<a href="../index.html">Yi Jiang</a>
 			</div>
-			<div class="links">
-				<a href="../about.html">About</a>
-				<a href="../work.html">Work</a>
+			<div class="menu">
+				<ul class="nav">
+					<li><a href="../about.html">About</a></li>
+					<li><a class="active" href="../work.html">Work</a></li>
+				</ul>
+			</div>
+			<div class="menubutton">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
 			</div>
 		</div>
 	</div>
@@ -35,6 +44,7 @@
 				<tr>
 					<td>
 						<div class="images" id="images">
+							<div class="prev disabled" id="prev"><i class="fa fa-chevron-left"></i></div>
 							<img class="img active" src="../images/thumb/lotc-1.PNG"/>
 							<img class="img" src="../images/thumb/lotc-2.PNG"/>
 							<img class="img" src="../images/thumb/lotc-3.PNG"/>
@@ -46,6 +56,7 @@
 							<img class="img" src="../images/thumb/lotc-9.PNG"/>
 							<img class="img" src="../images/thumb/lotc-10.PNG"/>
 							<img class="img" src="../images/thumb/lotc-11.PNG"/>
+							<div class="next" id="next"><i class="fa fa-chevron-right"></i></div>
 						</div>
 					</td>
 					<td class="maincase">
@@ -82,5 +93,6 @@
 		];
 	</script>
 	<script src="../project.js"></script>
+	<script src="../main.js"></script>
 </body>
 </html>
