@@ -40,34 +40,32 @@
 			<div class="box">
 				<div class="message">The below are screenshots of the project. Everything except the images used in the project do not belong to me, they are used as placeholders for now. If subject to copyright, please contact me and I will gladly take it down.</div>
 			</div>
-			<table class="showcase" cellpadding="0" cellspacing="5">
-				<tr>
-					<td>
-						<div class="images" id="images">
-							<div class="prev disabled" id="prev"><i class="fa fa-chevron-left"></i></div>
-							<img class="img active" src="../images/thumb/foodan-1.PNG"/>
-							<img class="img" src="../images/thumb/foodan-2.PNG"/>
-							<img class="img" src="../images/thumb/foodan-3.PNG"/>
-							<img class="img" src="../images/thumb/foodan-4.PNG"/>
-							<img class="img" src="../images/thumb/foodan-5.PNG"/>
-							<img class="img" src="../images/thumb/foodan-6.PNG"/>
-							<img class="img" src="../images/thumb/foodan-7.PNG"/>
-							<img class="img" src="../images/thumb/foodan-8.PNG"/>
-							<img class="img" src="../images/thumb/foodan-9.PNG"/>
-							<div class="next" id="next"><i class="fa fa-chevron-right"></i></div>
-						</div>
-					</td>
-					<td class="maincase">
-						<div class="imgmain">
-							<img src="../images/full/foodan-1.PNG" id="imgmain"/>
-						</div>
-						<div class="textmain" id="textmain">
-							<b></b>
-							<p></p>
-						</div>
-					</td>
-				</tr>
-			</table>
+			<div class="showcase">
+				<div class="images" id="images">
+					<div class="prev disabled" id="prev"><i class="fa fa-chevron-left"></i></div>
+					<img class="img active" src="../images/thumb/foodan-1.png"/>
+					<img class="img" src="../images/thumb/foodan-2.png"/>
+					<img class="img" src="../images/thumb/foodan-3.png"/>
+					<img class="img" src="../images/thumb/foodan-4.png"/>
+					<img class="img" src="../images/thumb/foodan-5.png"/>
+					<img class="img" src="../images/thumb/foodan-6.png"/>
+					<img class="img" src="../images/thumb/foodan-7.png"/>
+					<img class="img" style="margin-bottom:0;" src="../images/thumb/foodan-8.png"/>
+					<div class="next" id="next"><i class="fa fa-chevron-right"></i></div>
+				</div>
+				<div class="maincase">
+					<div class="imgmain">
+						<img src="../images/full/foodan-1.png" id="imgmain"/>
+					</div>
+					<div class="textmain" id="textmain">
+						<b>Main UI elements</b>
+						<p>This website has predefined language UI descriptions for a few languages such as English, Spanish, French, Simplified and Traditional Chinese, and Japanese. For the current restaurant we are working with for the project, it selected 4 of the languages. The navigation links contain a language dropdown that users can toggle the language of the website. When toggled to another language, the dropdown contents will render the correct language names in the respective language.</p>
+						<p>The two big characters indicate the main food groups of the restaurant, which is used to separate the different sections of the menu. It reads 'spicy' and 'non spicy'. Clicking on the respective link will redirect the user to the respective section on the menu.</p>
+						<p>At the bottom left, I have provided the designs of the plus and minus buttons, which are the main functionalities for the user to add items to their order or remove from their order. The darker one is the hovered state.</p>
+						<p>The footer is shown on the bottom center. The bottom right is a hovered button located at the bottom of the menu pages to quickly lead the user to the checkout page when they have at least 1 item on their order.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="footer">
@@ -75,7 +73,14 @@
 	</div>
 	<script>
 		var text = [
-			"<b></b><p></p>"
+			"<b>Main UI elements</b><p>This website has predefined language UI descriptions for a few languages such as English, Spanish, French, Simplified and Traditional Chinese, and Japanese. For the current restaurant we are working with for the project, it selected 4 of the languages. The navigation links contain a language dropdown that users can toggle the language of the website. When toggled to another language, the dropdown contents will render the correct language names in the respective language.</p><p>The two big characters indicate the main food groups of the restaurant, which is used to separate the different sections of the menu. It reads 'spicy' and 'non spicy'. Clicking on the respective link will redirect the user to the respective section on the menu.</p><p>At the bottom left, I have provided the designs of the plus and minus buttons, which are the main functionalities for the user to add items to their order or remove from their order. The darker one is the hovered state.</p><p>The footer is shown on the bottom center. The bottom right is a hovered button located at the bottom of the menu pages to quickly lead the user to the checkout page when they have at least 1 item on their order.</p>",
+			"<b>Menu page outline</b><p>This particular screenshot shows how the page is structured on the menu pages. The header appears on all pages. 'Menu' is hovered, which will change the color of the link to gold (user themed link color).</p><p>The body of a food group page shows the food group name in big, as well as all the items under this category. The food are displayed with an image, name, ingredients if any, price, and the plus button. The user can click on the button to add the item (of quantity 1) to their order.</p><p>The image also shows the popup message that appears at the bottom just before the black bar. It will appear for 3 seconds after the user has added any item to their order, and it will also show exactly what was last added. The user can close the message before 3 seconds, too.</p><p>The bottom black bar shows how many items have been added to the order. The user can also quickly go to the checkout page instead of the next page (user can click on previous and next pagination in the body).</p>",
+			"<b>Order page</b><p>The order page is split into left and right. On the left, the order contents is displayed as according to the image above. Each item is counted as one separate item. For example, if the user ordered 2 'Spicy Chicken', there will be 2 of those cards laid out. Each item has an image, name, price, and the minus button. We did not implement addition of choosing different ingredients. Clicking on the menu button will simply remove that card from the page and the total costs will be updated immediately.</p><p>On the right, the user will have to select pickup/delivery methods, fill in guest details, and select their payment method. We did not implement actual transactions, so clicking on the checkout button will just record the order to the database. Reloading the page will reset the session, so the order contents from before will be removed.</p>",
+			"<b>Panel page: site info</b><p>Our project is trying to serve two types of users: customers and restaurants. The screenshots from before would show the actual website being entered to order and look at the menu. This screenshot shows what the panel looks like for the restaurant or an administrator. The plan is to have the restaurant be able to customer (limitedly) their website design and information.</p><p>The available languages are shown. English has to be selected, but the restaurant can also add other languages, but adding other languages will trigger input fields for 'name', 'tagline', and 'about'. These will be the translations when the user toggles the website.</p>",
+			"<b>Panel page: edit design</b><p>Our customization tool for the restaurant manager is very limited, as they can only change the coloring. Each input field is of type 'color', so it will update the hex code on the database for the restaurant colors. Upon each page being landed for that restaurant website, the ':root' CSS element will be changed with user defined variables.</p>",
+			"<b>Panel page: create menu</b><p>On this page, the restaurant can add a new food group or add a new food item. Each food group is separated into headings, and the table below it shows all the food belonging to that group. For now, I have made all names of the food group and the food name in the format 'e;s;f;cs;ct;j', which is composed of all the languages. It would take a lot of time to go through each and every single one by different language. An option for this is to have an 'action' button that takes that food to another page that edits everything at once, and only the English version is shown on this page.</p><p>In addition, it is also not possible to delete a food, but the user is able to edit everything on this page, even changing the name and the price. The image cannot be changed, however.</p>",
+			"<b>Panel page: create menu (add food group/food)</b><p>The screenshot shows 2 pages that are linked from the buttons on the create menu page. Adding a food group is fairly straightforward, as the user can just type in the name in the languages that the restaurant has selected. A nice to have is to allow the user to reorder the food group on the table of contents of the menu.</p><p>As for adding food, there are more input fields that the user can fill out. The code is optional, but the name of the food must be complete for all shown languages. For now, the picture is based off of a URL. Making an input file upload is doable but was not within the scope of our project (could be implemented in the future). The ingredients functionality was also something that was not implemented, but the user is able to add them in. Lastly, there is the price and the food group dropdown.</p>",
+			"<b>Panel page: order list</b><p>The order list would be helpful for restaurants to look at for online orders. All orders submitted to the database would be shown here. Each order has the customer's name, order date, total cost, order contents (for preparation), address, and status. For now, we made it that when it is a pickup, the customer still has to enter the restaurant's address, which should be advanced to selecting from a list of restaurant locations (if there is only one - then that should be selected by default). It would make sense for the customer to fill in a delivery address, though.</p><p>The restaurant can also see the status of the order, and they can also click on the button 'transition to next phase' so that they know what stage the order is in, which helps them sort through things faster. We have yet to make a filter function in this page to filter by each status, as the restaurant should only focus on the orders that are not close to being completed.</p>"
 		];
 	</script>
 	<script src="../project.js"></script>
