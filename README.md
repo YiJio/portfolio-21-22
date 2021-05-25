@@ -8,4 +8,6 @@ Quick link: <a target="blank" href="https://yijio.github.io/portfolio/">Portfoli
 
 05/13/2021: Current added project pages (description/screenshot) transferred from local computer to repository.
 
-05/15/2021: Project page FooDan created, handled simple mobility.
+05/15/2021: Project page 'FooDan' created, handled simple mobility.
+
+05/25/2021: Project pages 'game UI designs' and 'SketchUp models' created.
