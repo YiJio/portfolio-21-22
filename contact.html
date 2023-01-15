@@ -5,7 +5,7 @@
 	<meta http-equiv="content-type" content="text/html" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="styles.css"/>
-	<title>Portfolio</title>
+	<title>Portfolio - Contact</title>
 </head>
 <body>
 	<div class="intro">
@@ -17,7 +17,7 @@
 				<ul class="nav">
 					<li><a href="about.html">About</a></li>
 					<li><a href="work.html">Work</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a class="active" href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 			<div class="menubutton">
@@ -27,30 +27,23 @@
 			</div>
 		</div>
 	</div>
-	<div class="dserv" id="services">
-		<div class="item" id="dev">
-			<h2>Develop.</h2>
-			<p>Areas of development work:</p>
-			<ul>
-				<li>Game - gameplay mechanics, etc.</li>
-				<li>Web - frontend, backend, etc.</li>
-			</ul>
-		</div>
-		<div class="item" id="des">
-			<h2>Design.</h2>
-			<p>Areas of design work:</p>
-			<ul>
-				<li>Game - UI, concept, story, character, etc.</li>
-				<li>Web - UI, database, etc.</li>
-			</ul>
-		</div>
-		<div class="item" id="dra">
-			<h2>Draw.</h2>
-			<p>Areas of drawing work:</p>
-			<ul>
-				<li>Game - illustration, sprites, 3D modeling, etc.</li>
-				<li>Web - graphic icons, banners, etc.</li>
-			</ul>
+	<div class="contact">
+		<div class="content">
+			<div class="info">
+				<h1>Contact.</h1>
+				<img src="" alt="Contact banner"/>
+				<p class="links">
+					<a href="mailto:jiangy.grad88@gmail.com"><i class="fa fa-envelope"></i></a>
+					<a target="blank" href="https://www.linkedin.com/in/yijio/"><i class="fa fa-linkedin"></i></a>
+					<a target="blank" href="https://github.com/YiJio"><i class="fa fa-github"></i></a>
+				</p>
+			</div>
+			<form>
+				<input type="text" id="name" placeholder="Name" required/>
+				<input type="email" id="email" placeholder="Email" required/>
+				<textarea id="message" placeholder="Message" required></textarea>
+				<input type="submit" value="Submit"/>
+			</form>
 		</div>
 	</div>
 	<div class="footer" style="border:none;">

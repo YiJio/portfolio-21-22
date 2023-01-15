@@ -3,6 +3,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="content-type" content="text/html" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="styles.css"/>
 	<title>Portfolio - About</title>
 </head>
@@ -16,6 +17,7 @@
 				<ul class="nav">
 					<li><a class="active" href="about.html">About</a></li>
 					<li><a href="work.html">Work</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 			<div class="menubutton">
@@ -25,55 +27,176 @@
 			</div>
 		</div>
 	</div>
-	<div class="resume">
-		<div class="about">
-			<div class="profile"><img src="images/profile/profile8.png"/></div>
-			<div class="info">
+	<div class="about">
+		<div class="top">
+			<div>
 				<h1>Yi Jiang</h1>
-				<p>Undergraduate senior studying at University of Nevada, Reno</p>
+				<!--<h3>江颐</h3>-->
+			</div>
+			<div>
+				<p>Nevada, United States of America</p>
+				<!--<p class="cn">美国内华达州</p>-->
+				<p>+1 702 210 4371</p>
+			</div>
+		</div>
+		<div class="body">		
+			<div>
+				<span class="refresh" id="refresh"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M9 12l-4.463 4.969-4.537-4.969h3c0-4.97 4.03-9 9-9 2.395 0 4.565.942 6.179 2.468l-2.004 2.231c-1.081-1.05-2.553-1.699-4.175-1.699-3.309 0-6 2.691-6 6h3zm10.463-4.969l-4.463 4.969h3c0 3.309-2.691 6-6 6-1.623 0-3.094-.65-4.175-1.699l-2.004 2.231c1.613 1.526 3.784 2.468 6.179 2.468 4.97 0 9-4.03 9-9h3l-4.537-4.969z"/></svg></span>
+				<img id="mepic" src="../images/profile/profile8.png"/>
 				<p class="links">
 					<a href="mailto:jiangy.grad88@gmail.com"><i class="fa fa-envelope"></i></a>
 					<a target="blank" href="https://www.linkedin.com/in/yijio/"><i class="fa fa-linkedin"></i></a>
 					<a target="blank" href="https://github.com/YiJio"><i class="fa fa-github"></i></a>
 				</p>
-				<p>Pursuing a BS degree in Computer Science. Seeking employment. Hobbies include coding, designing, and drawing.</p>
+			</div>
+			<div>
+				<p>Graduated at University of Nevada, Reno &bull; Fall 2021<br>Bachelor of Science, Computer Science & Engineering</p>
+				<p><!--Yi Jiang is a recent graduate who -->Focuses on game development & design, web development & design, and various other graphic design fields.<!-- She began her journey through coding at the age of 12 and went on to study computer science for 4 years during high school and completing the degree for 3.5 years at the University of Nevada, Reno.--></p>
+				<p><!--Yi Jiang is --><span>Currently seeking employment</span> and <span>working on completing personal projects.</span><!-- She has several projects stacked upon each other but done in no particular order. Most of her projects focus on the need for tools or learning (from something or someone around her) that she is also interested in starting up for.</p>
+				<p>Anything related to art other than the ones drawn for game/web is not presented in this portfolio. <strong>Instead, you can find her account on Weibo, Pixiv, Tumblr, and DeviantArt, in which she goes by the artist name <b>JYKeine</b>.</strong></p>
+				<hr>
+				<p class="cn">毕业于内华达大学里诺分校 &bull; 2021<br>理学学士，计算机科学与工程</p>
+				<p class="cn">江颐是一名应届毕业生，主要从事游戏研制与设计、网页研制与设计、以及其他设计领域。她在12岁开始编码，在高中用了4年继续学习计算机科学，然而在内华达大学里诺分校用了3.5年完成学位。</p>
+				<p class="cn">江颐目前<span>正在寻找工作</span>，也<span>在完成个人作品</span>。关于个人作品，她有几个未完成、没有按特定顺序完成的作品堆在一起。开启新作品的动力，一般来自受到周围的某个东西或某个人的需求，才可被激发出来。</p>
+				<p class="cn">除为游戏/网页绘制的作品外，任何与艺术相关的作品均未呈现在此网站中。<strong>您可以在微博、Pixiv、Tumblr、和DeviantArt上找到她的账号，搜索名称「JYKeine」即可。</strong></p>-->
+			</div>
+		</div>		
+	</div>
+	<div class="resume">
+		<div class="left">&nbsp;</div>
+		<div class="right">
+			<div class="lang">
+				<h3 class="reveal" style="--order:1;">Technical languages</h3>
+				<div class="separator reveal" style="--order:2;"></div>
+				<div class="element reveal" style="--order:3;">
+					<span>HTML/CSS</span>
+					<div class="box"><div class="pc percent-in" style="--order:1;">95%</div></div>
+				</div>
+				<div class="element reveal" style="--order:4;">
+					<span>PHP</span>
+					<div class="box"><div class="pc percent-in" style="--order:2;">95%</div></div>
+				</div>
+				<div class="element reveal" style="--order:5;">
+					<span>C/C++/C#</span>
+					<div class="box"><div class="pc percent-in" style="--order:3;">90%</div></div>
+				</div>
+				<div class="element reveal" style="--order:6;">
+					<span>JS</span>
+					<div class="box"><div class="pc percent-in" style="--order:4;">90%</div></div>
+				</div>
+				<div class="element reveal" style="--order:7;">
+					<span>SQL</span>
+					<div class="box"><div class="pc percent-in" style="--order:5;">85%</div></div>
+				</div>
+				<div class="element reveal" style="--order:8;">
+					<span>Java</span>
+					<div class="box"><div class="pc percent-in" style="--order:6;">75%</div></div>
+				</div>
+				<div class="element reveal" style="--order:9;">
+					<span>Python</span>
+					<div class="box"><div class="pc percent-in" style="--order:7;">70%</div></div>
+				</div>
+				<p class="reveal" style="--order:10;">
+					*Frameworks not included in the list.
+				</p>
+			</div>
+			<div class="soft">
+				<h3 class="reveal" style="--order:1;">Software knowledge</h3>
+				<div class="grid">
+					<div class="element reveal" style="--order:2;">Unity</div>
+					<div class="element reveal" style="--order:3;">Unreal Engine 4</div>
+					<div class="element reveal" style="--order:4;">Autodesk Maya</i></div>
+					<div class="element reveal" style="--order:5;">Blender</div>
+					<div class="element reveal" style="--order:6;">Adobe Photoshop</div>
+					<div class="element reveal" style="--order:7;">Adobe Illustrator</div>
+					<div class="element reveal" style="--order:8;">Adobe InDesign</div>
+					<div class="element reveal" style="--order:9;">SketchUp</div>
+					<div class="element reveal" style="--order:10;">GIMP</div>
+				</div>
+				<p class="reveal" style="--order:10;">*Coding environments such as VSCode, Notepad++, etc. not included in the list.</p>
 			</div>
 		</div>
-		<div class="heading">— Skills —</div>
-		<div class="section">
-			<div class="title">Foreign language</div>
-			<div class="info">
-				<span>Mandarin Chinese</span>
-				<span>Cantonese Chinese</span>
-				<span>American English</span>
-			</div>
+	</div>
+	<div class="resume" id="exp">
+		<div class="left">
+			<h3 class="reveal" style="--order:1;">Experience</h3>
 		</div>
-		<div class="section">
-			<div class="title">Field of work</div>
-			<div class="info">
-				<span>Programming</span>
-				<span>UI design</span>
-				<span>Game design & development</span>
-				<span>Web design & development</span>
-				<span>Illustration</span>
-				<span>3D modeling</span>
+		<div class="right">
+			<div class="section reveal" style="--order:2;">
+				<div class="head">
+					<div>
+						<b>Graphic Designer</b>
+						<span>SingSingSign</span>
+					</div>
+					<em>May 2022 - Jan 2023</em>
+				</div>
+				<ul>
+					<li>Designed visual content for customers and their events</li>
+					<li>Used Adobe Illustrator and Photoshop to create proofs and final designs</li>
+					<li>Redesigned cards, advertisements, menus from low-quality resources given by customers</li>
+					<li>Helped customers understand what exactly they are looking for and need to print</li>
+				</ul>
 			</div>
-		</div>
-		<div class="section">
-			<div class="title">Software proficiency</div>
-			<div class="info">
-				<span>Unity</span>
-				<span>Unreal Engine 4</span>
-				<span>Autodesk Maya</span>
-				<span>Blender</span>
-				<span>Adobe Photoshop</span>
-				<span>Adobe InDesign</span>
-				<span>SketchUp</span>
+			<div class="section reveal" style="--order:3;">
+				<div class="head">
+					<div>
+						<b>Real Estate Clerk Assistant</b>
+						<span>Realty ONE Group</span>
+					</div>
+					<em>Jan 2021 - May 2021, Feb 2022 - May 2022</em>
+				</div>
+				<ul>
+					<li>Organized forms and filed records to ensure consistency and accurate tracking, reducing the time to find documents quickly</li>
+					<li>Utilized Excel spreadsheet reports to organize and categorize data, increasing streamline accuracy of calculations</li>
+					<li>Matched bank transactions and events to Quicken by following accounting principles, pinpointing errors, and deducing possibilities of money loss</li>
+				</ul>
+			</div>
+			<div class="section reveal" style="--order:4;">
+				<div class="head">
+					<div>
+						<b>Mathematics Grader/TA</b>
+						<span>University of Nevada, Reno</span>
+					</div>
+					<em>Sep 2021 - Dec 2021</em>
+				</div>
+				<ul>
+					<li>Gave feedback on the breakdown of points relating to the specific student, increasing their incentive to show work on their next quizzes</li>
+					<li>Achieved an increase in student grades with an average of 8% for 4 classes</li>
+					<li>Worked with professors and attended one-on-one lessons with students, improving their understanding of the quiz material</li>
+				</ul>
+			</div>
+			<div class="section reveal" style="--order:5;">
+				<div class="head">
+					<div>
+						<b>Undergraduate BioSoRo Researcher</b>
+						<span>University of Nevada, Reno</span>
+					</div>
+					<em>Jun 2021 - Aug 2021</em>
+				</div>
+				<ul>
+					<li>Conducted daily research for 8 hours a week and bi-weekly presentations to manage progress of experimentation</li>
+					<li>Worked closely with mentors to strengthen understanding of topic and use proper research resources available, expanding the architecture of electrical circuit wiring for project</li>
+					<li>Connected sensors and data communication with code for 16 inputs from joints of a single hand, modeling from 9,600 samples to find a linear fit for gesture detection</li>
+					<li>Developed a prototype utilizing multiple software programs and implemented a representative 3D interface, increasing the recognition of gesture input</li>
+				</ul>
+			</div>
+			<div class="section reveal" style="--order:6;">
+				<div class="head">
+					<div>
+						<b>Mathematics Teaching Assistant</b>
+						<span>University of Nevada, Reno</span>
+					</div>
+					<em>Nov 2020 - Dec 2020</em>
+				</div>
+				<ul>
+					<li>Used TexWorks and TexStudio to format PDF documents, evaluating conceptual detail and consistency of various reports reflective to class lectures</li>
+					<li>Created weekly reports and attended Zoom meetings with professor to manage suggestions and discuss student score performance</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 	<div class="footer">
-		© All rights reserved.
+		Copyright © 2021 Yi Jiang. All rights reserved.
 	</div>
 	<script src="main.js"></script>
 </body>
