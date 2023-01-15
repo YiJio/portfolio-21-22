@@ -11,3 +11,5 @@ Quick link: <a target="blank" href="https://yijio.github.io/portfolio/">Portfoli
 05/15/2021: Project page 'FooDan' created, handled simple mobility.
 
 05/25/2021: Project pages 'game UI designs' and 'SketchUp models' created.
+
+01/14/2021: Complete changeover for portfolio (this version was created in February 2022).
