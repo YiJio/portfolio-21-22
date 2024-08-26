@@ -1,7 +1,7 @@
 # Portfolio
 Welcome to my OLD portfolio. Shows about, contact, and various works done.
 
-Quick link: <a target="blank" href="https://yijio.github.io/portfolio-old/">Portfolio</a>
+Quick link: <a target="blank" href="https://yijio.github.io/portfolio-21-22/">Portfolio</a>
 
 # Update Logs
 04/08/2021: Current portfolio saved in local computer, will be transported to here later.
@@ -15,3 +15,5 @@ Quick link: <a target="blank" href="https://yijio.github.io/portfolio-old/">Port
 01/14/2023: Complete changeover for portfolio (this version was created in February 2022).
 
 01/14/2023: Portfolio postponed. Visit new <a target="blank" href="https://yijio.github.io/portfolio/">link</a> for my current portfolio.
+
+08/25/2024: Updated the name for this repository to reflect portfolio versions.
